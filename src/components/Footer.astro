@@ -1,0 +1,26 @@
+---
+const platform = ["Github", "Instagram"];
+const username = ["withastro", "dani_cbh"];
+import Social from "./Social.astro";
+---
+
+<footer>
+  <p>
+    <p>
+      Learn more about my projects on <a
+        href={`https://www.${platform}.com/${username}`}>{platform}</a
+      >!
+    </p>
+  </p>
+  <Social platform="instagram" username="dani_cbh" />
+  <Social platform="github" username="TheDaidor2001" />
+</footer>
+
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
